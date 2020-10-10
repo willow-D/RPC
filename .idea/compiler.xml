@@ -11,7 +11,7 @@
         <module name="rpc-framework-simple" />
         <module name="client" />
         <module name="server" />
-        <module name="hello-service-api" />
+        <module name="service-api" />
       </profile>
     </annotationProcessing>
   </component>
