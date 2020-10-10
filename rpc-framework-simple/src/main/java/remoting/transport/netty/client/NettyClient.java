@@ -39,7 +39,7 @@ public class NettyClient {
                 .handler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception {
-                        //ch.pipeline().addLast(new IdleStateHandler(0,5,0, TimeUnit.SECONDS));
+                        ch.pipeline().addLast(new IdleStateHandler(0,5,0, TimeUnit.SECONDS));
                         ch.pipeline().addLast(new NettyKryoDecoder(kryoSerializer, RpcResponse.class));
                         ch.pipeline().addLast(new NettyKryoEncoder(kryoSerializer, RpcRequest.class));
                         ch.pipeline().addLast(new NettyClientHandler());
