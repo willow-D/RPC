@@ -12,4 +12,11 @@
 - 使用CompletableFuture优化接受服务端返回结果，从而实现服务的异步调用。
 - 使用开源的序列化机制Kryo替代 JDK 自带的序列化机制，提高序列化性能。
 
+### 涉及知识点
+- Socket编程
+- Netty
+- Zookeeper 以及 Curator使用
+- 序列化机制
+- 异步编程与CompletableFuture
+- 反射与动态代理
  
